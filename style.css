@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(to bottom, #ffd6e8, #ff9bb3);
+  text-align: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: #e91e63;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.quote {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.letter {
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.final h1 {
+  font-size: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Floating Hearts */
+body::before {
+  content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  font-size: 20px;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
